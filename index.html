@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gilberto Ruiz - Resume</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .skill-bar {
+            transition: width 0.8s ease-in-out;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        @media print {
+            .print-button, .no-print {
+                display: none !important;
+            }
+            body {
+                font-size: 12px;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, #667eea, #764ba2, #667eea);
+            height: 2px;
+            margin: 1.5rem 0;
+        }
+        
+        .contact-icon {
+            color: #667eea;
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Print Button -->
+    <button onclick="window.print()" class="print-button bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-lg transition-colors no-print">
+        <i class="fas fa-print mr-2"></i>Print Resume
+    </button>
+
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl">
+        <!-- Header Section -->
+        <div class="gradient-bg text-white p-8 animate-fade-in">
+            <div class="flex flex-col md:flex-row items-center gap-6">
+                <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                    <img src="imagecv1.jpg" alt="Professional headshot of Gilberto Ruiz wearing a blue blazer and light pink shirt with glasses, smiling confidently in a modern office setting with city buildings visible through the window behind him" class="w-full h-full object-cover object-center transform scale-130"/>
+                </div>
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl font-bold mb-2">Gilberto Ruiz</h1>
+                    <h2 class="text-xl font-light mb-4">Data & Media Analytics Specialist | Systems Engineer | AI & Process Optimization Enthusiast</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="bg-gray-100 p-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <span class="text-gray-700">+52 5516475121</span>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <span class="text-gray-700">gilbertoruizit@gmail.com</span>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <span class="text-gray-700">Estado de México, México</span>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <a href="https://www.linkedin.com/in/gilbertoruizg" class="text-blue-600 hover:underline">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-8">
+            <!-- Professional Summary -->
+            <section class="mb-8 animate-fade-in">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                    <i class="fas fa-user-tie text-blue-600"></i>
+                    Professional Profile
+                </h3>
+                <div class="section-divider"></div>
+                <p class="text-gray-700 leading-relaxed">
+                    <strong>Systems Engineering professional</strong> with <strong>10 years of specialized experience</strong> in digital media monitoring and data analysis. Expert in AI-driven process optimization, achieving <strong>33% reduction in transcription processing times</strong>. Proven experience in team leadership and project management. Focus on strategic communication and information analysis for executive decision-making. <strong>Seeking remote opportunities</strong> in Data Analytics and Media Intelligence.
+                </p>
+            </section>
+
+            <!-- Professional Experience -->
+            <section class="mb-8 animate-fade-in">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                    <i class="fas fa-briefcase text-blue-600"></i>
+                    Professional Experience
+                </h3>
+                <div class="section-divider"></div>
+                
+                <div class="card-hover bg-white border-l-4 border-blue-500 p-6 mb-6 shadow-md rounded-r-lg">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-800">Public Sector – Strategic Communication & Media Analysis</h4>
+                            <p class="text-blue-600 font-medium">General Directorate of Social Communication - Government Sector</p>
+                        </div>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Nov 2015 - Present (10 years)</span>
+                    </div>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-chart-line text-green-500 mt-1"></i>
+                            <span>Comprehensive monitoring of electronic media (radio, TV, web portals) for strategic information analysis</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-robot text-green-500 mt-1"></i>
+                            <span><strong>Implemented AI tools</strong> to optimize transcriptions, reducing bulletin processing times by <strong>33%</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-file-alt text-green-500 mt-1"></i>
+                            <span>Transcription and synthesis of informative segments, interviews, and digital content for executive reports</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-search text-green-500 mt-1"></i>
+                            <span>Assessment and classification of institutionally relevant information for strategic decision-making</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-chart-bar text-green-500 mt-1"></i>
+                            <span>Development of analytical reports and dashboards for stakeholder communication</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <span class="text-sm font-medium text-gray-600">Technologies:</span>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">Data Analysis</span>
+                            <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">Media Monitoring</span>
+                            <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">AI Implementation</span>
+                            <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs">Process Optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white border-l-4 border-purple-500 p-6 mb-6 shadow-md rounded-r-lg">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-800">Founder & CEO</h4>
+                            <p class="text-purple-600 font-medium">Digital Mining & Trading Venture</p>
+                        </div>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">2021 - 2022 (1 year)</span>
+                    </div>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-users text-green-500 mt-1"></i>
+                            <span><strong>Led multidisciplinary team</strong> of 5 professionals specialized in financial technology</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-coins text-green-500 mt-1"></i>
+                            <span>Comprehensive management of digital mining operations and cryptocurrency trading</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-chart-trending-up text-green-500 mt-1"></i>
+                            <span>Development of investment strategies and analysis of volatile financial markets</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-shield-alt text-green-500 mt-1"></i>
+                            <span>Financial risk management and strategic decision-making in high uncertainty environments</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="mb-8 animate-fade-in">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                    <i class="fas fa-graduation-cap text-blue-600"></i>
+                    Education
+                </h3>
+                <div class="section-divider"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="card-hover bg-white p-6 rounded-lg shadow-md border">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Computer Systems Engineering</h4>
+                        <p class="text-blue-600 font-medium mb-2">Degree Completed</p>
+                        <p class="text-gray-600 text-sm">Specialization in software development, databases, and systems administration</p>
+                    </div>
+                    
+                    <div class="card-hover bg-white p-6 rounded-lg shadow-md border">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Aeronautical Engineering</h4>
+                        <p class="text-gray-600 font-medium mb-2">Partial Studies (Year 4 completed)</p>
+                        <p class="text-gray-600 text-sm">Engineering fundamentals, advanced mathematics, and technical project management</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section class="mb-8 animate-fade-in">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                    <i class="fas fa-certificate text-blue-600"></i>
+                    Certifications & Courses
+                </h3>
+                <div class="section-divider"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="card-hover bg-gradient-to-r from-blue-50 to-blue-100 p-4 rounded-lg border border-blue-200">
+                        <div class="flex items-center gap-3">
+                            <i class="fab fa-google text-blue-600 text-2xl"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Google AI Essentials</h4>
+                                <p class="text-sm text-gray-600">Coursera - 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-r from-green-50 to-green-100 p-4 rounded-lg border border-green-200">
+                        <div class="flex items-center gap-3">
+                            <i class="fab fa-google text-green-600 text-2xl"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Google Prompting Essentials</h4>
+                                <p class="text-sm text-gray-600">Coursera - 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-r from-purple-50 to-purple-100 p-4 rounded-lg border border-purple-200">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-project-diagram text-purple-600 text-2xl"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Google Project Management</h4>
+                                <p class="text-sm text-gray-600">Coursera - 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-gradient-to-r from-orange-50 to-orange-100 p-4 rounded-lg border border-orange-200">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-chart-bar text-orange-600 text-2xl"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Google Data Analytics</h4>
+                                <p class="text-sm text-orange-600 font-medium">In Progress - 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="mb-8 animate-fade-in">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                    <i class="fas fa-cogs text-blue-600"></i>
+                    Technical Skills
+                </h3>
+                <div class="section-divider"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Analysis & Monitoring</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-sm font-medium text-gray-700">Data Analysis & Visualization</span>
+                                    <span class="text-sm text-gray-500">90%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="skill-bar bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-sm font-medium text-gray-700">Media Monitoring (Radio, TV, Web)</span>
+                                    <span class="text-sm text-gray-500">95%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="skill-bar bg-green-600 h-2 rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-sm font-medium text-gray-700">Information Management</span>
+                                    <span class="text-sm text-gray-500">88%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="skill-bar bg-purple-600 h-2 rounded-full" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Technology & Management</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-sm font-medium text-gray-700">AI Tools & Automation</span>
+                                    <span class="text-sm text-gray-500">85%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="skill-bar bg-red-600 h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-sm font-medium text-gray-700">Project Management (Scrum, Agile)</span>
+                                    <span class="text-sm text-gray-500">80%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="skill-bar bg-yellow-600 h-2 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-sm font-medium text-gray-700">Full Stack Development</span>
+                                    <span class="text-sm text-gray-500">75%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="skill-bar bg-indigo-600 h-2 rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Soft Skills -->
+            <section class="mb-8 animate-fade-in">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                    <i class="fas fa-lightbulb text-blue-600"></i>
+                    Interpersonal Skills
+                </h3>
+                <div class="section-divider"></div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="card-hover text-center p-4 bg-blue-50 rounded-lg border border-blue-200">
+                        <i class="fas fa-users text-blue-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium text-gray-800">Team Leadership</p>
+                    </div>
+                    <div class="card-hover text-center p-4 bg-green-50 rounded-lg border border-green-200">
+                        <i class="fas fa-sync-alt text-green-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium text-gray-800">Adaptability</p>
+                    </div>
+                    <div class="card-hover text-center p-4 bg-purple-50 rounded-lg border border-purple-200">
+                        <i class="fas fa-brain text-purple-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium text-gray-800">Critical Thinking</p>
+                    </div>
+                    <div class="card-hover text-center p-4 bg-orange-50 rounded-lg border border-orange-200">
+                        <i class="fas fa-puzzle-piece text-orange-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium text-gray-800">Problem Solving</p>
+                    </div>
+                    <div class="card-hover text-center p-4 bg-red-50 rounded-lg border border-red-200">
+                        <i class="fas fa-comments text-red-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium text-gray-800">Strategic Communication</p>
+                    </div>
+                    <div class="card-hover text-center p-4 bg-yellow-50 rounded-lg border border-yellow-200">
+                        <i class="fas fa-clock text-yellow-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium text-gray-800">Time Management</p>
+                    </div>
+                    <div class="card-hover text-center p-4 bg-indigo-50 rounded-lg border border-indigo-200">
+                        <i class="fas fa-shield-alt text-indigo-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium text-gray-800">Resilience</p>
+                    </div>
+                    <div class="card-hover text-center p-4 bg-pink-50 rounded-lg border border-pink-200">
+                        <i class="fas fa-chess text-pink-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium text-gray-800">Strategic Thinking</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Languages -->
+            <section class="mb-8 animate-fade-in">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                    <i class="fas fa-globe text-blue-600"></i>
+                    Languages
+                </h3>
+                <div class="section-divider"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="card-hover bg-white p-6 rounded-lg shadow-md border">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fas fa-flag text-green-600 text-xl"></i>
+                            <h4 class="text-lg font-semibold text-gray-800">Spanish</h4>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Native</span>
+                            <div class="flex gap-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-white p-6 rounded-lg shadow-md border">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fas fa-flag text-blue-600 text-xl"></i>
+                            <h4 class="text-lg font-semibold text-gray-800">English</h4>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Intermediate-Advanced</span>
+                            <div class="flex gap-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-2">Advanced reading and listening comprehension</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Management Methodologies -->
+            <section class="mb-8 animate-fade-in">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                    <i class="fas fa-project-diagram text-blue-600"></i>
+                    Management Methodologies
+                </h3>
+                <div class="section-divider"></div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="card-hover text-center p-4 bg-blue-50 rounded-lg border border-blue-200">
+                        <i class="fas fa-sync text-blue-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium text-gray-800">Scrum</p>
+                    </div>
+                    <div class="card-hover text-center p-4 bg-green-50 rounded-lg border border-green-200">
+                        <i class="fas fa-columns text-green-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium text-gray-800">Kanban</p>
+                    </div>
+                    <div class="card-hover text-center p-4 bg-purple-50 rounded-lg border border-purple-200">
+                        <i class="fas fa-rocket text-purple-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium text-gray-800">Agile</p>
+                    </div>
+                    <div class="card-hover text-center p-4 bg-orange-50 rounded-lg border border-orange-200">
+                        <i class="fas fa-chart-line text-orange-600 text-2xl mb-2"></i>
+                        <p class="text-sm font-medium text-gray-800">Six Sigma</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <div class="gradient-bg text-white p-6 text-center">
+            <p class="text-lg font-medium mb-2">Looking for a Data Analytics & Media Monitoring specialist?</p>
+            <p class="opacity-90">Available for remote opportunities | Specialized in AI optimization</p>
+            <div class="mt-4 flex justify-center gap-4">
+                <a href="mailto:gilbertoruizit@gmail.com" class="bg-white text-blue-600 px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+                    <i class="fas fa-envelope mr-2"></i>Contact
+                </a>
+                <a href="https://www.linkedin.com/in/gilbertoruizg" class="bg-blue-700 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-800 transition-colors">
+                    <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Animate skill bars on page load
+        window.addEventListener('load', function() {
+            const skillBars = document.querySelectorAll('.skill-bar');
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0%';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 500);
+            });
+        });
+
+        // Add smooth scrolling animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+
+        // Copy contact info to clipboard
+        function copyToClipboard(text, element) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = element.innerHTML;
+                element.innerHTML = '<i class="fas fa-check text-green-500"></i> Copied!';
+                setTimeout(() => {
+                    element.innerHTML = originalText;
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
+
